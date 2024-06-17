@@ -30,6 +30,14 @@ NVIDIA_API_KEY=your_nvidia_api_key
 GEMINI_API_KEY=your_gemini_api_key
 
 
+Before running the chatbotv31.py file, be sure to add the local path of the prompts.yml file to line 107 to properly initialize Nemo Gaurdrails. Additionally, add the local path of the ribbon-breast-cancer.png file to line 292 for proper display in the Gradio user interface. 
+
+Line 106: # Initialize NeMo Guardrails
+Line 107: config_path = "/Users/josephsteward/Nvidia/a-breast-rag-chatbot/files-breast-cancer-chatbot/prompts.yml"  # Path to your config file
+config
+
+Line 291: # Add the pink ribbon image with the correct path
+Line 292: gr.Image(value="/path/ribbon-breast-cancer.png", elem_id="pink-ribbon-image", label="Support Breast Cancer Awareness", width=250, height=250)
 
 Run the application: python src/chatbotv31.py
 
