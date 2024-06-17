@@ -1,14 +1,14 @@
 # Breast-Cancer-Supportive-Care-Chatbot
-This chatbot provides information about breast cancer supportive care resources, financial assistance resources, emotional support resources, and answers to treatment questions.
+This chatbot was developed for educational purposes only and is designed to provide users with information on breast cancer supportive care resources, clinical trials, financial assistance resources, emotional support resources, answers to treatment questions, radiology scan analysis and genomic testing education. This application uses Pinecone Vector Database as a vector store where PDF and CSV documents with information on breast cancer nonprofits, clinical trials and other relevant information were uploaded for pretrained large language models (LLM) to accessed via retrieval augmented generation (RAG). The chatbot also allows users to upload radiology and mammography scans in DICOM file format for educational analysis using gemini-1.5-flash for image analysis. Users can also upload genomic and biomarker testing reports for educational analysis using claude-3-opus from Anthropic. Nemo Gaurdrails from Nvidia was used for dialog management between the LLM and the user (see prompts.yml file). 
 
 Features:
 
-- Clinical trials search
+- Clinical trials search and treatment Q&A
 - Financial assistance resources
 - Supportive care resources
 - Emotional support resources
-- Treatment Q&A
 - Radiology scan analysis
+- Genomic testing report upload and analysis
 
 Installation:
 
@@ -28,6 +28,8 @@ OPENAI_API_KEY=your_openai_api_key
 CLAUDE_API_KEY=your_claude_api_key 
 NVIDIA_API_KEY=your_nvidia_api_key 
 GEMINI_API_KEY=your_gemini_api_key
+
+
 
 Run the application: python src/chatbotv31.py
 
