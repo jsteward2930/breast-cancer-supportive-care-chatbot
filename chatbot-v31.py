@@ -104,7 +104,7 @@ qa_chain = load_qa_with_sources_chain(
 )
 
 # Initialize NeMo Guardrails
-config_path = "/Users/josephsteward/Nvidia/a-breast-rag-chatbot/files-breast-cancer-chatbot/prompts.yml"  # Path to your config file
+config_path = "/local-file-path/prompts.yml"  # Path to your config file
 config = RailsConfig.from_path(config_path)
 app = LLMRails(config=config, llm=llm)
 
@@ -289,7 +289,7 @@ with gr.Blocks(css=".gradio-container {max-width: 900px; margin: auto;} #sidebar
             gr.Markdown("# Breast Cancer Supportive Care Chatbot\n\nThis chatbot provides information about breast cancer supportive care resources, financial assistance resources, emotional support resources, and answers to treatment questions.")
 
             # Add the pink ribbon image with the correct path
-            gr.Image(value="/Users/josephsteward/Nvidia/a-breast-rag-chatbot/files-breast-cancer-chatbot/ribbon-breast-cancer.png", elem_id="pink-ribbon-image", label="Support Breast Cancer Awareness", width=250, height=250)
+            gr.Image(value="/local-path/ribbon-breast-cancer.png", elem_id="pink-ribbon-image", label="Support Breast Cancer Awareness", width=250, height=250)
 
             buttons = []
             for i, tab_name in enumerate([
