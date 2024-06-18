@@ -81,7 +81,7 @@ Add and Query Vectors:
 License: This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International Public License - see the LICENSE file for details.
 
 
-Contact: For any inquiries, please contact jsteward2930@example.com
+Contact: For any inquiries, please contact jsteward2930@gmail.com
 
 
 Additional Resources: 
