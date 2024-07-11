@@ -10,6 +10,9 @@ Features:
 - Radiology scan analysis
 - Genomic testing report upload and analysis
 
+Demonstration video:
+Breast Cancer Supportive Care Chatbot https://www.youtube.com/watch?v=HwA_xrZuYSA
+
 Installation:
 
 - Clone the repository: git clone https://github.com/jsteward2930/breast-cancer-supportive-care-chatbot
